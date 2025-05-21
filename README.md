@@ -28,6 +28,8 @@ A secure, modular RESTful API built with **NestJS** featuring **user authenticat
 
 ## 📂 Project Structure
 
+```
+
 src/
 ├── auth/ # Auth module (signup, signin)
 ├── user/ # User profile & editing
@@ -35,6 +37,8 @@ src/
 ├── prisma/ # Prisma service
 ├── Strategy/ # Guards, interceptors, pipes
 └── main.ts # App bootstrap
+
+```
 
 ---
 
@@ -53,8 +57,12 @@ cd nestjs-bookmark-api
 
 Create a .env file in the root directory:
 
+````bash
+
 DATABASE_URL="postgresql://postgres:postgres@localhost:5432/bookmarkdb"
 JWT_SECRET="your_jwt_secret"
+
+ ```
 
 ### 3️⃣ Run with Docker (Recommended)
 
@@ -63,3 +71,4 @@ docker-compose up --build
 ## 🧪 Running Tests
 
 #### run pnpm test:e2e
+````
